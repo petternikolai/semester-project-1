@@ -8,7 +8,37 @@ html, body {
     margin: 0;
 }
 
-/* HAMBURGER MENU */
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* HAMBURGER MENU --- Original idea from: https://alvarotrigo.com/blog/hamburger-menu-css/ */
 
 #menu__toggle {
   opacity: 0;
@@ -101,6 +131,10 @@ header {
 
 /* HOMEPAGE */
 
+.home-heading-margin {
+  margin: 20px 20px;
+}
+
 .homepage-elements {
     height: 520px;
 }
@@ -124,11 +158,98 @@ header {
     margin: 0;
 }
 
+/* EXPLORE */
+
+.explore-page {
+  margin: 0 20px 20px 20px;
+}
+
+.img-for-kids {
+  float: right;
+  padding: 0 0 20px 20px;
+  width: 50%;
+}
+
+/* EXHIBITION SPACES */
+
+.exhibition-row {
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+}
+
+.img-exhibition-spaces {
+  width: 60%;
+  object-fit: cover;
+}
+
+.container-exhibition {
+  background-color: #FF9933;
+  width: 100%;
+}
+
+.exhibition-h2 {
+  position: relative;
+  padding-left: 20px;
+  height: 100%;
+  margin: 0;
+  top: 40%;
+}
+
+.exhibition-h2-double {
+  position: relative;
+  padding-left: 20px;
+  height: 100%;
+  margin: 0;
+  top: 30%;
+}
+
+/* SPECIAL EVENTS & EXHIBITION SPACES */
+
+.special-events-container {
+  height: fit-content;
+}
+
+.special-events-text-containers {
+  position: relative;
+  top: -10px;
+  background-color: rgb(255, 153, 51);
+  padding: 20px;
+  margin: 0;
+  height: 300px;
+}
+
+.special-events-text-containers h2 {
+  margin: 0;
+}
+
+/* VISIT */
+
+.section-visit {
+  margin: 0 20px;
+}
+
+iframe { 
+  border:0
+}
+
+.flex-row-visit {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.img-museum {
+  width: 100%;
+  height: 200px;
+}
+
 /* FOOTER */
 
 footer {
     width: 100%;
     bottom: 0;
+    margin-top: 20px;
 }
 
 .copyright {
