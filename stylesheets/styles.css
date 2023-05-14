@@ -170,14 +170,38 @@ header {
 
 /* EXPLORE */
 
+.center {
+  text-align: center;
+}
+
+.divider {
+  border-top: solid 1px #FF9933;
+  margin: 20px 0;
+}
+
+.container {
+  margin: 20px auto;
+  padding: 0 20px 20px 20px;
+  border: solid #FF9933 1px;
+  border-radius: 10px;
+}
+
 .explore-page {
   margin: 0 20px 20px 20px;
 }
 
-.img-for-kids {
-  float: right;
-  padding: 0 0 20px 20px;
-  width: 50%;
+.img-round {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+}
+
+.center-align {
+  text-align: center;
+  margin: 20px 0;
 }
 
 /* EXHIBITION SPACES */
@@ -226,17 +250,33 @@ header {
   background-color: rgb(255, 153, 51);
   padding: 20px;
   margin: 0;
-  height: 300px;
+  height: fit-content;
 }
 
 .special-events-text-containers h2 {
   margin: 0;
 }
 
+/* GET INVOLVED */
+
+.img-get-involved {
+  width: 100%;
+  height: auto;
+}
+
 /* VISIT */
+
+.red-color {
+  color: red;
+}
+
+i {
+  color: #FF9933;
+}
 
 .section-visit {
   margin: 0 20px;
+  text-align: center;
 }
 
 .address {
@@ -284,29 +324,29 @@ footer {
     font-size: 1rem;
   }
 
-  .special-events-text-containers {
-    height: 350px;
-  }
-
 }
 
 @media only screen and (min-width: 768px) {
   section, 
   .section-visit,
   .explore-page {
-    margin: 0 10%;
+    margin: 0 20%;
   }
 
   .home-heading-margin {
     margin: 20px 0 20px 0;
   }
 
-  .special-events-text-containers {
-    height: 180px;
+  .exhibition-row {
+    height: 200px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
+
+  .exhibition-spaces {
+    margin: 0 20%;
+  }
 
   .logo-mobile {
     display: none;
@@ -325,19 +365,11 @@ footer {
   section, 
   .section-visit,
   .explore-page {
-    margin: 0 20%;
+    margin: 0 30%;
   }
 
   .home-heading-margin {
     margin: 20px 0 20px 0;
-  }
-
-  .homepage-text-containers {
-    height: 100px;
-  }
-
-  .special-events-text-containers {
-    height: 175px;
   }
 
 }
@@ -346,7 +378,7 @@ footer {
   section, 
   .section-visit,
   .explore-page {
-    margin: 0 25%;
+    margin: 0 35%;
   }
 }
 
